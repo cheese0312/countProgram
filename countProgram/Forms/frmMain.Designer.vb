@@ -28,6 +28,7 @@ Partial Class frmMain
         Me.dtEnd = New System.Windows.Forms.DateTimePicker()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.cntLog = New System.Windows.Forms.ListBox()
+        Me.btnManual = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -59,14 +60,14 @@ Partial Class frmMain
         'dtEnd
         '
         Me.dtEnd.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtEnd.Location = New System.Drawing.Point(191, 15)
+        Me.dtEnd.Location = New System.Drawing.Point(191, 14)
         Me.dtEnd.Name = "dtEnd"
         Me.dtEnd.Size = New System.Drawing.Size(112, 21)
         Me.dtEnd.TabIndex = 11
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(707, 14)
+        Me.Button1.Location = New System.Drawing.Point(707, 11)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(81, 26)
         Me.Button1.TabIndex = 12
@@ -82,11 +83,21 @@ Partial Class frmMain
         Me.cntLog.Size = New System.Drawing.Size(775, 388)
         Me.cntLog.TabIndex = 13
         '
+        'btnManual
+        '
+        Me.btnManual.Location = New System.Drawing.Point(620, 11)
+        Me.btnManual.Name = "btnManual"
+        Me.btnManual.Size = New System.Drawing.Size(81, 26)
+        Me.btnManual.TabIndex = 14
+        Me.btnManual.Text = "실행"
+        Me.btnManual.UseVisualStyleBackColor = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnManual)
         Me.Controls.Add(Me.cntLog)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.dtStart)
@@ -107,4 +118,5 @@ Partial Class frmMain
     Friend WithEvents dtEnd As DateTimePicker
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents btnManual As Button
 End Class
